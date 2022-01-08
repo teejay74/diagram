@@ -1,0 +1,4 @@
+GET http://restapi.local/api/test-api
+Accept: application/json
+
+###

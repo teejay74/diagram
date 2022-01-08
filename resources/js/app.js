@@ -11,7 +11,8 @@ require('./bootstrap');
 import { createApp } from 'vue';
 import router from './router';
 import App from "./App.vue";
-
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 
 /**
@@ -33,7 +34,7 @@ import App from "./App.vue";
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 const app = createApp(App)
-    .use(router)
+    .use(router, VueAxios, axios)
     .mount('#app')
 // const app = new Vue({
 //     el: '#app',
