@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/test-api', [\App\Http\Controllers\TestController::class, 'test']);
 Route::post('/save-diagram', [\App\Http\Controllers\DataController::class, 'saveDataDiagram']);
 Route::get('/data-get', [\App\Http\Controllers\DataController::class, 'getDataDiagram']);
+Route::post('/edit-diagram', [\App\Http\Controllers\DataController::class, 'editDataDiagram']);
+Route::post('/delete-item', [\App\Http\Controllers\DataController::class, 'deleteDataDiagram']);
 
