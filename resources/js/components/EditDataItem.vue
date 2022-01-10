@@ -1,7 +1,7 @@
 <template>
     <li>{{ item.date }}</li>
     <input type="number" v-model="dataForm.value" @change="editItem(dataForm)">
-    <div @click="deleteItem(dataForm)">x</div>
+    <div class="btn-del" @click="deleteItem(dataForm)">x</div>
 </template>
 
 <script>
@@ -22,6 +22,7 @@
                     console.log(response.data)
                     emit('delete-item')
                 })
+
             }
             return { dataForm, editItem, deleteItem }
         }
@@ -32,5 +33,8 @@
     input {
         margin: 0 10px;
         width: 50px;
+    }
+    .btn-del {
+        cursor: pointer;
     }
 </style>

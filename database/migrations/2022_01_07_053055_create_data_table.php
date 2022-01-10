@@ -15,7 +15,7 @@ class CreateDataTable extends Migration
     {
         Schema::create('data', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('value');
+            $table->integer('value');
             $table->date('date');
             $table->timestamps();
         });

@@ -20,6 +20,7 @@
         <ul class="item-container">
             <EditDataItem v-for="item in dataList"
                           :item="item"
+                          :key="item.id"
                             @delete-item="getData"
             ></EditDataItem>
         </ul>
